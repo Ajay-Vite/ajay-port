@@ -1,0 +1,61 @@
+.contact{
+    position : relative;
+}
+.contact .C-1{
+    top :0;
+    position: absolute;
+    right : 48%;
+}
+.contact form input{
+    position : absolute;
+    right: 580px;
+    padding : 10px;
+    width: 20%;
+}
+.contact form .i-num{
+    position : absolute;
+    right: 580px;
+    top : 110px;
+}
+.contact form .i-comm{
+    position : absolute;
+    right: 580px;
+    top : 160px;
+    resize: none;
+    padding : 10px;
+    width: 20%;
+}
+.btn{
+    position : absolute;
+    right: 580px;
+    top : 280px;
+    padding: 10px;
+    width: 290px;
+    background-color: red;
+    color: white;
+    border : none;
+    cursor: pointer;
+}
+form input::placeholder{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+@media  screen and (max-width : 600px) {
+    .contact form input{
+        right : 170px;
+        width : 40%;
+    }
+    .contact form .i-num{
+        right : 170px;
+        width : 40%;
+    }
+    .contact form .i-comm{
+        right : 170px;
+        width : 40%;
+    }
+    .contact form .btn{
+        right : 170px;
+        width : 45%;
+    }
+}

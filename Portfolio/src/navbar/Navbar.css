@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1{
+    color : yellow;
+    margin-top: 0%;
+}
+
+body{
+    padding: 0%;   
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Nav-1{
+    padding : 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(58, 53, 53);
+    padding-bottom: 0px;
+    transition : 1.5s ease;
+}
+.Nav-1 p a:hover{
+    color : yellow;
+    cursor : pointer;
+    transition : 1.5s ease;
+    padding: 02px;
+    border-bottom: 2px solid yellow;
+}
+.Nav-1 p a{
+    color : white;
+    text-decoration: none;
+}
+.nav-toggle h1:hover{
+    color : yellow;
+    cursor : pointer;
+    transition : 1.5s ease;
+}
+.side-nav h1{
+    color: black;
+    position: absolute;
+    margin-left: 200px;
+}
+.side-nav p a:hover{
+    color : yellow;
+    cursor : pointer;
+    transition : 1.5s ease;
+    background-color: black;
+}
+.side-nav h1:hover{
+    color : yellow;
+    cursor : pointer;
+    transition : 1.5s ease;
+}
+.nav-toggle{
+    display : none;
+}
+ @media screen and (max-width : 600px) {
+    .Nav-1 p a{
+        display : none;
+    }
+    .nav-toggle{
+        display : block;
+    }
+    .nav-toggle:checked .Nav-1 p{
+        display : block;
+        flex-direction: row;
+ }
+}
+.side-nav{
+    padding: 10px;
+    background-color: aqua;
+    color: black;
+    position : fixed;
+    height : 100vh;
+    width : 50%;
+    top : 0;
+    left : -60%;
+    transition : 2s ease;
+}

@@ -1,0 +1,11 @@
+.display{
+    margin-top : 60px;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: blueviolet;
+}
+.j-img img{
+    width : 100vw;
+    height : 80vh;
+}
